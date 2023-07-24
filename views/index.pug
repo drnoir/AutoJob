@@ -1,5 +1,33 @@
 extends layout
 
+
+
 block content
   h1= title
-  p Welcome to #{title}
+  h2 Welcome to #{title}
+  h3 Autorunner for job applications via Google Cloud Talent Solution API
+  h4 Specify area, tags and frequency for sending out automated job apps to all listings meeting criteria in a given radius with tags
+
+  h2 Your spec:
+  blockquote
+  p johnsmith@gmail.com
+  p yourCV
+  textarea Covering Letter
+  p postcode
+  p Radius
+  p frequency
+
+  h2 Customise Spec:
+  blockquote
+  p johnsmith@gmail.com
+  form yourCV
+  textarea Covering Letter
+  p postcode
+  form number
+
+  button Start AutoSender
+  button Stop AutoSender
+  //For each loop templates for tags LATER
+  //var tags= ['cat', 'dog']
+  //ul
+  //li each petName in tags
